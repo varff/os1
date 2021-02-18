@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class ParallelTest {
 
 	List<List<Integer>> matrix = (Arrays.asList(
-			Arrays.asList(1,2,3,-3,2,0),//3
+			Arrays.asList(2,2,3,-3,2,0),//3
 			Arrays.asList(1,2,4,-3,2,8),//8
 			Arrays.asList(1,0,0,0,-2,0),//1
 			Arrays.asList(1,0,11,0,6,0)//11

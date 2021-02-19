@@ -88,9 +88,7 @@ public class Parallel {
 			ExecutionException {
 		ForkJoinPool customThreadPool = new ForkJoinPool(threadsNum);
 		return customThreadPool.submit(() -> matrix.parallelStream().map
-				(list -> list.parallelStream().max(Integer::compare).get()).collect(Collectors.toList()).
-				parallelStream().reduce(0, Integer::sum)).get();
-//
+				(list -> list.parallelStream().max(Integer::compare).get()).reduce(0, Integer::sum)).get();
 	}
 
 	public static void main(String[] args) {
